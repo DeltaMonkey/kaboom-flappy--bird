@@ -1,1 +1,1 @@
-robocopy ../assets ../dist/assets & robocopy ../ ../dist .env
+robocopy ../assets ../dist/assets /E & robocopy ../ ../dist .env

@@ -55,10 +55,11 @@ export class Main {
         console.log(`${process.env.PROJECT_NAME} initialization finished.`);
     }
 
-    private _loadGameAssets(): void {
-        this.kaboom.loadSprite('birdy', 'assets/sprites/birdy.png');
-        this.kaboom.loadSprite('bg', 'assets/sprites/bg.png');
-        this.kaboom.loadSprite('pipe', 'assets/sprites/pipe.png');
-        this.kaboom.loadSound('wooosh', 'assets/sounds/wooosh.mp3');
+    private async _loadGameAssets(): Promise<void> {
+        this.kaboom.loadRoot('./assets/')
+        this.kaboom.loadSprite('pipe', 'sprites/pipe.png');
+        this.kaboom.loadSprite('bg', 'sprites/bg.png');
+        this.kaboom.loadSprite('birdy', 'sprites/birdy.png');
+        this.kaboom.loadSound('wooosh', 'sounds/wooosh.mp3');
     }
 }
