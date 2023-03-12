@@ -1,0 +1,6 @@
+{
+  "appId": "com.kaboomflappybird.app",
+  "appName": "kaboom-flappy-bird",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}

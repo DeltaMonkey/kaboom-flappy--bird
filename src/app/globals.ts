@@ -1,0 +1,2 @@
+let platform: string;
+

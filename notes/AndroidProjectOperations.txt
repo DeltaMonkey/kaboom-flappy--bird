@@ -1,0 +1,27 @@
+***android\app\src\main\AndroidManifest.xml***
+"1 START"
+manifest > application > activity
+                                android:screenOrientation="userLandscape">
+"1 END"
+
+
+"2 START"
+
+rename android/app/src/main/res/values/strings_SAMPLE.xml to android/app/src/main/res/values/strings.xml
+
+In file android/app/src/main/AndroidManifest.xml, add the following XML elements under <manifest><application> :
+
+<meta-data
+ android:name="com.google.android.gms.ads.APPLICATION_ID"
+ android:value="@string/admob_app_id"/>
+In file android/app/src/main/res/values/strings.xml add the following lines :
+
+<string name="admob_app_id">[APP_ID]</string>
+Don't forget to replace [APP_ID] by your AdMob application Id.
+
+Variables
+This plugin will use the following project variables (defined in your app's variables.gradle file):
+
+$playServicesAdsVersion version of com.google.android.gms:play-services-ads (default: 21.1.0)
+
+"2 END"
