@@ -31,7 +31,7 @@ export default class CapacitorComp {
         const options: BannerAdOptions = {
             adId,
             adSize: BannerAdSize.BANNER,
-            position: BannerAdPosition.TOP_CENTER,
+            position: BannerAdPosition.BOTTOM_CENTER,
             margin: 0,
             isTesting: true
         }
